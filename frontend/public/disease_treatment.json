@@ -1,0 +1,218 @@
+{
+  "Apple___Apple_scab": {
+    "display": "Apple Scab",
+    "crop": "Apple",
+    "severity": "moderate",
+    "treatment": "Apply fungicides containing captan or myclobutanil. Remove and destroy infected leaves. Improve air circulation by pruning.",
+    "prevention": "Plant resistant varieties. Apply lime sulfur sprays during dormant season.",
+    "organic": "Neem oil spray every 7–10 days. Baking soda solution (1 tbsp per litre)."
+  },
+  "Apple___Black_rot": {
+    "display": "Apple Black Rot",
+    "crop": "Apple",
+    "severity": "high",
+    "treatment": "Prune out infected branches 15cm below visible infection. Apply copper-based fungicide. Remove mummified fruits.",
+    "prevention": "Maintain orchard sanitation. Avoid bark injuries.",
+    "organic": "Bordeaux mixture spray. Remove all infected plant material promptly."
+  },
+  "Apple___Cedar_apple_rust": {
+    "display": "Cedar Apple Rust",
+    "crop": "Apple",
+    "severity": "moderate",
+    "treatment": "Apply fungicide (myclobutanil or triadimefon) from pink bud stage through 3rd cover spray.",
+    "prevention": "Remove nearby juniper/cedar trees. Plant resistant apple varieties.",
+    "organic": "Sulfur-based sprays during early infection period."
+  },
+  "Apple___healthy": {
+    "display": "Healthy Apple Leaf",
+    "crop": "Apple",
+    "severity": "none",
+    "treatment": "No treatment needed. Plant appears healthy.",
+    "prevention": "Continue regular monitoring and good orchard management.",
+    "organic": "Maintain current practices."
+  },
+  "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+    "display": "Gray Leaf Spot (Maize)",
+    "crop": "Maize",
+    "severity": "high",
+    "treatment": "Apply foliar fungicides (strobilurins or triazoles) at early tasseling. Rotate crops with non-host plants.",
+    "prevention": "Use resistant hybrids. Avoid excessive nitrogen. Till crop residue.",
+    "organic": "Copper hydroxide spray. Crop rotation with legumes."
+  },
+  "Corn_(maize)___Common_rust_": {
+    "display": "Common Rust (Maize)",
+    "crop": "Maize",
+    "severity": "moderate",
+    "treatment": "Apply fungicide (propiconazole or azoxystrobin) if rust appears before tasseling. Scout weekly.",
+    "prevention": "Plant resistant hybrids. Early planting to avoid peak spore periods.",
+    "organic": "Sulfur dust or neem oil spray at 10-day intervals."
+  },
+  "Corn_(maize)___Northern_Leaf_Blight": {
+    "display": "Northern Leaf Blight (Maize)",
+    "crop": "Maize",
+    "severity": "high",
+    "treatment": "Apply triazole or strobilurin fungicide at VT/R1 growth stage. Destroy infected crop debris.",
+    "prevention": "Use resistant varieties. Avoid monoculture. Ensure good drainage.",
+    "organic": "Trichoderma-based biocontrol sprays. Crop rotation."
+  },
+  "Corn_(maize)___healthy": {
+    "display": "Healthy Maize Leaf",
+    "crop": "Maize",
+    "severity": "none",
+    "treatment": "No treatment needed. Plant appears healthy.",
+    "prevention": "Continue scouting weekly for early detection of pests.",
+    "organic": "Maintain current agronomic practices."
+  },
+  "Grape___Black_rot": {
+    "display": "Grape Black Rot",
+    "crop": "Grape",
+    "severity": "high",
+    "treatment": "Apply mancozeb or myclobutanil fungicide from bud break through veraison. Remove mummified berries.",
+    "prevention": "Prune to improve air circulation. Remove infected berries immediately.",
+    "organic": "Bordeaux mixture. Copper sulfate spray before bud break."
+  },
+  "Grape___healthy": {
+    "display": "Healthy Grape Leaf",
+    "crop": "Grape",
+    "severity": "none",
+    "treatment": "No treatment needed. Plant appears healthy.",
+    "prevention": "Regular monitoring and canopy management.",
+    "organic": "Maintain current vineyard practices."
+  },
+  "Potato___Early_blight": {
+    "display": "Early Blight (Potato)",
+    "crop": "Potato",
+    "severity": "moderate",
+    "treatment": "Apply chlorothalonil or mancozeb every 7–10 days starting at first sign. Remove lower infected leaves.",
+    "prevention": "Use certified disease-free seed. Avoid overhead irrigation.",
+    "organic": "Copper-based fungicide. Neem oil spray weekly."
+  },
+  "Potato___Late_blight": {
+    "display": "Late Blight (Potato)",
+    "crop": "Potato",
+    "severity": "critical",
+    "treatment": "URGENT: Apply metalaxyl + mancozeb immediately. Remove and burn infected plants. Do not compost. Harvest early if >30% infected.",
+    "prevention": "Use resistant varieties (Kufri Jyoti, Kufri Bahar). Apply preventive fungicide before monsoon.",
+    "organic": "Copper hydroxide spray. Destroy infected haulms immediately."
+  },
+  "Potato___healthy": {
+    "display": "Healthy Potato Leaf",
+    "crop": "Potato",
+    "severity": "none",
+    "treatment": "No treatment needed. Plant appears healthy.",
+    "prevention": "Monitor regularly, especially during humid weather.",
+    "organic": "Maintain current crop management."
+  },
+  "Tomato___Bacterial_spot": {
+    "display": "Bacterial Spot (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply copper bactericide (copper hydroxide) + mancozeb. Avoid working in field when wet. Remove severely infected plants.",
+    "prevention": "Use disease-free transplants. Avoid overhead irrigation. Rotate crops.",
+    "organic": "Copper soap spray. Hydrogen peroxide solution (3%) foliar spray."
+  },
+  "Tomato___Early_blight": {
+    "display": "Early Blight (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply chlorothalonil or copper fungicide every 7 days. Remove lower infected leaves. Avoid wetting foliage.",
+    "prevention": "Stake plants for air circulation. Mulch to prevent soil splash.",
+    "organic": "Baking soda spray (1 tbsp + 1 tsp oil per litre). Neem oil weekly."
+  },
+  "Tomato___Late_blight": {
+    "display": "Late Blight (Tomato)",
+    "crop": "Tomato",
+    "severity": "critical",
+    "treatment": "URGENT: Apply metalaxyl-M + mancozeb immediately. Remove and destroy infected plants. Do not compost.",
+    "prevention": "Avoid planting near potatoes. Use resistant varieties. Apply preventive copper spray.",
+    "organic": "Copper hydroxide spray at first sign. Destroy infected plants."
+  },
+  "Tomato___Leaf_Miner": {
+    "display": "Leaf Miner (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply spinosad or abamectin insecticide. Remove and destroy heavily mined leaves.",
+    "prevention": "Use yellow sticky traps. Install fine mesh netting.",
+    "organic": "Neem oil spray. Release parasitic wasps (Diglyphus isaea)."
+  },
+  "Tomato___Leaf_Mold": {
+    "display": "Leaf Mold (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply chlorothalonil or copper fungicide. Increase ventilation in greenhouse. Reduce humidity below 85%.",
+    "prevention": "Use resistant varieties. Proper spacing and pruning.",
+    "organic": "Potassium bicarbonate spray. Improve air circulation."
+  },
+  "Tomato___Septoria_leaf_spot": {
+    "display": "Septoria Leaf Spot (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply copper fungicide or chlorothalonil every 7–10 days. Remove infected lower leaves. Avoid overhead watering.",
+    "prevention": "Mulch soil surface. Practice 2–3 year crop rotation.",
+    "organic": "Copper soap spray. Remove infected leaves promptly."
+  },
+  "Tomato___Spider_mites Two-spotted_spider_mite": {
+    "display": "Spider Mites (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply miticide (abamectin or bifenazate). Spray undersides of leaves. Increase humidity around plants.",
+    "prevention": "Avoid water stress. Remove weeds. Avoid dusty conditions.",
+    "organic": "Neem oil spray. Release predatory mites (Phytoseiulus persimilis). Water spray to dislodge mites."
+  },
+  "Tomato___Target_Spot": {
+    "display": "Target Spot (Tomato)",
+    "crop": "Tomato",
+    "severity": "moderate",
+    "treatment": "Apply azoxystrobin or chlorothalonil fungicide. Remove heavily infected leaves.",
+    "prevention": "Improve plant spacing. Avoid leaf wetness.",
+    "organic": "Copper-based fungicide spray every 10 days."
+  },
+  "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+    "display": "Yellow Leaf Curl Virus (Tomato)",
+    "crop": "Tomato",
+    "severity": "critical",
+    "treatment": "URGENT: No cure. Remove and destroy infected plants immediately to prevent spread. Control whitefly vector with imidacloprid or thiamethoxam.",
+    "prevention": "Use TYLCV-resistant varieties. Install reflective mulch. Use insect-proof nets.",
+    "organic": "Yellow sticky traps for whiteflies. Neem oil spray. Remove infected plants."
+  },
+  "Tomato___Tomato_mosaic_virus": {
+    "display": "Tomato Mosaic Virus",
+    "crop": "Tomato",
+    "severity": "high",
+    "treatment": "No chemical cure. Remove infected plants. Disinfect tools with bleach solution. Control aphid vectors.",
+    "prevention": "Use certified virus-free seeds. Wash hands before handling plants.",
+    "organic": "Remove infected plants. Control aphids with neem oil. Avoid tobacco near tomatoes."
+  },
+  "Tomato___healthy": {
+    "display": "Healthy Tomato Leaf",
+    "crop": "Tomato",
+    "severity": "none",
+    "treatment": "No treatment needed. Plant appears healthy.",
+    "prevention": "Continue regular monitoring and balanced fertilisation.",
+    "organic": "Maintain current practices."
+  },
+  "Rice___Leaf_Blast": {
+    "display": "Leaf Blast (Rice)",
+    "crop": "Rice",
+    "severity": "high",
+    "treatment": "Apply tricyclazole or isoprothiolane fungicide at first sign. Drain field temporarily. Avoid excess nitrogen.",
+    "prevention": "Use blast-resistant varieties (Jaya, IR64). Balanced fertilisation.",
+    "organic": "Silicon fertiliser improves resistance. Trichoderma spray."
+  },
+  "Rice___Brown_Spot": {
+    "display": "Brown Spot (Rice)",
+    "crop": "Rice",
+    "severity": "moderate",
+    "treatment": "Apply mancozeb or iprodione fungicide. Ensure adequate potassium supply.",
+    "prevention": "Balanced NPK fertilisation. Avoid water stress.",
+    "organic": "Potassium silicate spray. Neem cake soil application."
+  },
+  "Rice___Neck_Blast": {
+    "display": "Neck Blast (Rice)",
+    "crop": "Rice",
+    "severity": "critical",
+    "treatment": "URGENT: Apply tricyclazole at booting and heading stage. Act fast — this can destroy entire yield.",
+    "prevention": "Use resistant varieties. Avoid heavy nitrogen at panicle initiation.",
+    "organic": "Pseudomonas fluorescens biocontrol spray."
+  }
+}

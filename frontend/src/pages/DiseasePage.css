@@ -1,0 +1,337 @@
+/* ── Model status bar ─────────────────────────────── */
+.model-status-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-size: 0.84rem;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  font-weight: 500;
+}
+.status-loading { background: #FFF8E1; color: #8D6E12; border-color: #FFE082; }
+.status-ready   { background: #E8F4EF; color: var(--primary); border-color: var(--border); }
+.status-error   { background: #FFECEC; color: #C0392B; border-color: #FFAAAA; }
+.status-idle    { background: var(--surface-2); color: var(--text-muted); }
+.model-status-bar code {
+  background: rgba(0,0,0,0.07);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.status-dot {
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: currentColor;
+  opacity: 0.6;
+}
+.status-dot.green { background: #2D6A4F; opacity: 1; }
+.status-dot.red   { background: #C0392B; opacity: 1; }
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.25); }
+}
+.status-dot.pulse { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+/* ── Layout ────────────────────────────────────────── */
+.disease-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Upload panel ──────────────────────────────────── */
+.upload-panel { display: flex; flex-direction: column; gap: 14px; }
+
+.drop-zone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+.drop-zone:hover     { border-color: var(--secondary); background: var(--surface-2); }
+.drop-zone.drag-over { border-color: var(--primary); background: #E8F4EF; border-style: solid; }
+.drop-zone.has-image { border-style: solid; border-color: var(--border); padding: 0; }
+
+.drop-placeholder { text-align: center; padding: 32px 16px; }
+.drop-icon  { font-size: 3rem; margin-bottom: 10px; }
+.drop-title { font-family: 'Sora', sans-serif; font-weight: 600; font-size: 0.95rem; color: var(--text); margin-bottom: 4px; }
+.drop-sub   { font-size: 0.8rem; color: var(--text-muted); }
+
+.leaf-preview {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.upload-actions {
+  display: flex;
+  gap: 10px;
+}
+.btn-secondary {
+  padding: 12px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+.btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
+
+.btn-spinner {
+  display: inline-block;
+  width: 14px; height: 14px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+/* Tips */
+.tips-card { padding: 16px; }
+.tips-title { font-size: 0.88rem; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
+.tips-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.tips-list li {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.4;
+}
+.tips-list li::before {
+  content: '•';
+  position: absolute;
+  left: 6px;
+  color: var(--secondary);
+}
+
+/* ── Primary result card ────────────────────────────── */
+.primary-result-card {
+  border: 2px solid;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 16px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.primary-result-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+}
+
+.primary-result-icon { font-size: 2rem; flex-shrink: 0; }
+
+.primary-result-info { flex: 1; }
+.primary-crop-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 3px;
+}
+.primary-disease-name {
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.primary-confidence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+.conf-pct {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+}
+.conf-lbl {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.conf-bar-outer {
+  height: 6px;
+  background: var(--border);
+}
+.conf-bar-inner {
+  height: 100%;
+  transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.severity-badge-row { padding: 10px 20px; }
+.severity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 99px;
+  border: 1px solid;
+}
+
+/* ── Confidence breakdown ─────────────────────────── */
+.conf-card { padding: 16px 20px; margin-bottom: 16px; }
+.conf-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+.conf-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.conf-rank {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+}
+.conf-name {
+  font-size: 0.82rem;
+  color: var(--text);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.conf-bar-track {
+  width: 100px;
+  height: 8px;
+  background: var(--surface-2);
+  border-radius: 99px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.conf-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+.conf-pct-label {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ── Treatment card ────────────────────────────────── */
+.treatment-card { padding: 20px; margin-bottom: 16px; }
+.treatment-title {
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+.treatment-sections { display: flex; flex-direction: column; gap: 10px; }
+.treatment-section {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+.treatment-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+}
+.treatment-text {
+  font-size: 0.85rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ── Loading / empty ────────────────────────────────── */
+.loading-card {
+  text-align: center;
+  padding: 56px 24px;
+}
+.loading-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 16px;
+}
+.loading-sub { color: var(--text-muted); font-size: 0.85rem; margin-top: 4px; }
+
+.empty-state { text-align: center; padding: 56px 24px; }
+.empty-icon  { font-size: 3rem; margin-bottom: 12px; }
+.empty-state p { font-size: 0.95rem; color: var(--text-muted); }
+.empty-sub { font-size: 0.82rem !important; margin-top: 6px; }
+
+/* ── Mobile ─────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .disease-layout {
+    grid-template-columns: 1fr;
+  }
+  .conf-bar-track { width: 60px; }
+}
+
+/* Demo mode additions */
+.status-demo { background: #FFF8E1; color: #7B5800; border-color: #FFD54F; }
+.status-dot.amber { background: #F4A261; opacity: 1; animation: pulse-dot 1.5s ease-in-out infinite; }
+
+.demo-note {
+  margin-top: 14px;
+  background: #FFF8E1;
+  border: 1px solid #FFD54F;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  color: #7B5800;
+}
+
+.conf-pct-big {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+}
